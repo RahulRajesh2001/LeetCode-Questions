@@ -5,8 +5,7 @@
 var lengthOfLastWord = function(s) {
     let c=0
 let w=s.trim().split('').reverse()
-
-for(i=0;i<w.length;i++){
+for(let i=0;i<w.length;i++){
     if(w[i]!=' '){
         c++
     }else{
