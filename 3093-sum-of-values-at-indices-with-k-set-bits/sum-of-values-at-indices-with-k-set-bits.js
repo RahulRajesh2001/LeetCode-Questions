@@ -5,10 +5,10 @@
  */
 var sumIndicesWithKSetBits = function(nums, k) {
     let s=0;
-    for(let i=0;i<nums.length;i++){
+    for(i=0;i<nums.length;i++){
         let v=i.toString(2).padStart(3, '0')
         let c=0;
-        for(let j=0;j<v.length;j++){
+        for(j=0;j<v.length;j++){
             if(v[j]==1){
                 c++
             }
