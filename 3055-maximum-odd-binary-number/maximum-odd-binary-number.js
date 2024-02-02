@@ -6,17 +6,17 @@ var maximumOddBinaryNumber = function(s) {
     let c=0;
     let d=0;
     let b=[]
-    for(i=0;i<s.length;i++){
+    for(let i=0;i<s.length;i++){
         if(s[i]==0){
             c++
         }else{
             d++;
         }
     }
-    for(i=0;i<d-1;i++){
+    for(let i=0;i<d-1;i++){
         b.push(1)
     }
-    for(i=0;i<c;i++){
+    for(let i=0;i<c;i++){
         b.push(0)
     }
 
