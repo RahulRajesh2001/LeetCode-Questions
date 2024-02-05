@@ -22,5 +22,4 @@ if(setMap.size == set.size){
 }else{
     return false
 }
-
-};
+}
