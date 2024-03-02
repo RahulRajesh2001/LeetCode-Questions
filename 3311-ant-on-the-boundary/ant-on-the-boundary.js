@@ -8,7 +8,7 @@ var returnToBoundaryCount = function(nums) {
     for(let i=0;i<nums.length;i++){
          c=c+nums[i]
         if(c==0){
-            l=l+1;
+        l=l+1;
         }
     }
     return l
