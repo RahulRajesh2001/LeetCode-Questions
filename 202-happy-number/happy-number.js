@@ -3,24 +3,21 @@
  * @return {boolean}
  */
 var isHappy = function(n) {
- if(n<10){
-    if(n===1 || n===7){
-        return true
-    }else{
-        return false
+    var a = n.toString().split('');
+    var array = [];
+    while (true) {
+        var sum = 0;
+    for (let i=0;i<a.length;i++) {
+            sum+=parseInt(a[i])**2;
+        }
+        if (sum==1){
+            return true;
+        }
+    if (array.includes(sum)) {
+            return false;
+        } else {
+            array.push(sum);
+        }
+        a=sum.toString().split('')
     }
- }
-
- let total=0
- while(n>0){
-    let sq=n%10;
-    total=total+sq**2
-    n=n-sq;
-    n=n/10
- }
- if(total === 1){
-    return true
- }else{
-    return isHappy(total)
- }
 };
