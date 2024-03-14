@@ -20,4 +20,4 @@ var isHappy = function(n) {
         }
         a=sum.toString().split('')
     }
-};
+}
