@@ -4,11 +4,14 @@
  */
 var missingNumber = function(nums) {
     let l=nums.length;
-   let fact=(l*(l+1)/2)
-
-    var Sum=0
-   for(let i=0;i<l;i++){
-    Sum=Sum+nums[i]
-   }
-   return fact-Sum
-};
+    let sum=0
+    for(let i=1;i<=l;i++){
+    sum=sum+i
+    }
+    
+    for(let i=0;i<nums.length;i++){
+        sum-=nums[i]
+    }
+    return sum
+   
+}
