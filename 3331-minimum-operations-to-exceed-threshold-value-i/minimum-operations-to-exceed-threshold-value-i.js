@@ -4,11 +4,11 @@
  * @return {number}
  */
 var minOperations = function(nums, k) {
-let c=0
+    let arr=[]
     for(let i=0;i<nums.length;i++){
-        if(nums[i]<k){
-            c++
+        if(nums[i]>=k){
+            arr.push(nums[i])
         }
     }
-    return c
+    return nums.length-arr.length
 };
