@@ -26,10 +26,10 @@ var middleNode = function (head) {
     let c = 0;
     while (firsthead){
         c++;
-        if (c === l) {
+        if (c <= l) { 
             result.push(firsthead);
         }
         firsthead = firsthead.next;
     }
-    return result[result.length - 1];
+    return result[l-1]
 };
